@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 15+: içerik durum çubuğunun altına taşmasın -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

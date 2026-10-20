@@ -1,0 +1,37 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.zikirmatik.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.zikirmatik.app'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    // Uygulama dosyalarını güvenli bir https adresinden sunmak için (konum izni ve kayıtlar bu sayede çalışır)
+    implementation 'androidx.webkit:webkit:1.12.1'
+}
